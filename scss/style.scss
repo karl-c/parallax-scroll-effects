@@ -8,7 +8,8 @@
   }
 }
 
-body {
+body,
+.content-box {
   background-image: url('../img/bg-body.jpg');
 
   .footer {
@@ -37,6 +38,16 @@ body {
   .mask {
     height: 100%;
     width: 100%;
+  }
+
+  .content-box {
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 200px;
+    border-radius: 10px;
+    text-align: right
   }
 }
 
