@@ -1,9 +1,4 @@
-/*
-Credits to https://devinevineyards.ca/ for the images and design inspiration
-Created by Karl Chelton
-*/
-
-// Used for the top and bottom spacer divs - not necessary for effect
+// Global rules, not necessary for effects
 .spacer {
   height: 40em;
 
@@ -13,26 +8,39 @@ Created by Karl Chelton
   }
 }
 
-// All necessary for the correct effect
 body {
   background-image: url('../img/bg-body.jpg');
+
+  .footer {
+    text-align: center;
+    background-color: darkslategray;
+    color: white;
+  }
 }
 
-%block {
-  width: 80%;
+// Splash Effects
+.splash-container {
+  %block {
+    width: 80%;
+  }
+
+  .rb {
+    @extend %block;
+    float: right;
+  }
+
+  .lb {
+    @extend %block;
+    float: left;
+  }
+
+  .mask {
+    height: 100%;
+    width: 100%;
+  }
 }
 
-.rb {
-  @extend %block;
-  float: right;
-}
-
-.lb {
-  @extend %block;
-  float: left;
-}
-
-.mask {
-  width: 100%;
-  height: 100%;
+// Slide Effects
+.slider {
+  height: 20em;
 }

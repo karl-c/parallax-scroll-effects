@@ -18,10 +18,25 @@
 
     <main>
 
-      <!--
-        Credits to https://devinevineyards.ca/ for the images and design inspiration
-        Created by Karl Chelton
-      -->
+      <!-- start spacer for demonstration -->
+      <div class="spacer">
+        <h1 class="spacer-text">Example Content</h1>
+      </div>
+      <!-- end spacer for demonstration -->
+
+      <!-- start splash section -->
+      <div class="splash-container container-fluid p-0 clearfix">
+
+        <div class="lb parallax clearfix" data-parallax-bg-image="img/bg-1.jpg" data-parallax-speed="0.8" data-parallax-direction="up" data-parallax-parallaxBgPosition="right">
+          <img class="mask img-fluid" src="img/mask_1.png" alt="Image Mask">
+        </div>
+
+        <div class="rb parallax clearfix" data-parallax-bg-image="img/bg-2.jpg" data-parallax-speed="0.8" data-parallax-direction="down" data-parallax-parallaxBgPosition="right">
+          <img class="mask img-fluid" src="img/mask_2.png" alt="Image Mask">
+        </div>
+
+      </div>
+      <!-- end splash section -->
 
       <!-- start spacer for demonstration -->
       <div class="spacer">
@@ -29,22 +44,15 @@
       </div>
       <!-- end spacer for demonstration -->
 
-      <!-- start window section -->
-      <!-- note: must have parallax JS -->
-      <div class="container-fluid p-0 clearfix">
+      <!-- start slide section -->
+      <div class="splash-container container-fluid p-0 clearfix">
 
-        <div class="lb parallax clearfix" data-parallax-bg-image="img/bg-1.jpg" data-parallax-speed="0.8" data-parallax-direction="up" data-parallax-parallaxBgPosition="right"
-        data-parallax-parallaxBgRepeat="no-repeat" data-parallax-parallaxBgSize="cover">
-          <img class="mask img-fluid" src="img/mask_1.png" alt="Image Mask">
-        </div>
+        <div class="slider parallax clearfix" data-parallax-bg-image="img/bg-3.jpg" data-parallax-speed="0.8" data-parallax-direction="left" data-parallax-parallaxBgPosition="right"></div>
 
-        <div class="rb parallax clearfix" data-parallax-bg-image="img/bg-2.jpg" data-parallax-speed="0.8" data-parallax-direction="down" data-parallax-parallaxBgPosition="right"
-        data-parallax-parallaxBgRepeat="no-repeat" data-parallax-parallaxBgSize="cover">
-          <img class="mask img-fluid" src="img/mask_2.png" alt="Image Mask">
-        </div>
+        <div class="slider parallax clearfix" data-parallax-bg-image="img/bg-4.jpg" data-parallax-speed="0.8" data-parallax-direction="right" data-parallax-parallaxBgPosition="right"></div>
 
       </div>
-      <!-- end window section -->
+      <!-- end slide section -->
 
       <!-- start spacer for demonstration -->
       <div class="spacer">
@@ -53,6 +61,10 @@
       <!-- end spacer for demonstration -->
 
     </main>
+
+    <footer class="footer p-2">
+      <p class="mb-0">Karl Chelton</p>
+    </footer>
 
     <!-- jQuery first, then Bootstrap JS, then Parallax JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
