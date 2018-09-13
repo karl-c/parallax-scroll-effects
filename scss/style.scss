@@ -1,0 +1,25 @@
+/*
+Credits to https://devinevineyards.ca/ for the images and design inspiration
+Created by Karl Chelton
+*/
+
+// Used for the top and bottom spacer divs - not necessary for effect
+.spacer {
+  height: 40em;
+
+  &-text {
+    line-height: 15em;
+    text-align: center;
+  }
+}
+
+// All necessary for the correct effect
+body {
+  // Any bg image
+  background-image: url('../img/bg-body.jpg');
+}
+
+// Important for responsiveness
+.mask {
+  width: 100%;
+}
